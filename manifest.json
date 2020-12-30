@@ -1,0 +1,21 @@
+{
+    "name": "PWA Khanza",
+    "short_name": "PWA",
+    "description": "Aplikasi PWA pertama khanza",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#9f5f80",
+    "theme_color": "#9f5f80",
+    "icons": [
+        {
+            "src": "gd.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "kjy.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
