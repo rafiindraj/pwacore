@@ -16,26 +16,34 @@
     <span id="splash-overlay" class="splash"></span>
     <span id="welcome" class="z-depth-4"></span>
 
-    <header>  
-        <nav class="teal shadow p-3 mb-5 rounded" role="navigation">
-            <div class="nav-wrapper container">
-                <a href="#" class="brand-logo" id="logo-container">Kblog!</a>
+    <!-- <header> -->
+    <nav class="teal shadow p-3 mb-5 rounded" role="navigation">
+        <div class="nav-wrapper container" id="div1" style="visibility:hidden;">
+            <!-- <a href="#" class="brand-logo" id="logo-container">Kblog!</a>
                 <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
                 <ul class="topnav right hide-on-med-and-down"></ul>
-                <ul class="sidenav" id="nav-mobile"></ul>
-            </div>
-            <form class="form-inline">
+                <ul class="sidenav" id="nav-mobile"></ul> -->
+            <a href="#" class="brand-logo" id="logo-container">KBlog!</a>
+            <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+        <!-- <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
-    </header>
+            </form> -->
+    </nav>
+    <!-- </header> -->
 
     <div class="container" id="body-content"></div>
     <script src="js/materialize.min.js"></script>
     <script src="js/nav.js"></script>
 
     <script>
+        setTimeout(function () {
+            document.getElementById('div1').style.visibility = "visible";
+        }, 2000);
         // REGISTER SERVICE WORKER
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function () {
